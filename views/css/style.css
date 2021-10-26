@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* 0 - 9 / a - f */
+    background: linear-gradient(30deg, #9b00ff, #ff00ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 1000px;
+    height: 550px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .7);
+}

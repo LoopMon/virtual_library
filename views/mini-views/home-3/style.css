@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+}
+.config {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+
+    grid-template-areas: "form1"
+                         "form2"
+                         "form3"
+                         "form4"
+                         "form5";
+    gap: 10px;
+}
+
+/* form1 do config */
+.config form:nth-child(1) {
+    margin-left: 10px;
+    grid-area: form1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "label1 label2 ."
+                         "input1 input2 btn";
+    align-items: center;
+}
+
+.config form:nth-child(1) .lb1 {
+    grid-area: label1;
+}
+.config form:nth-child(1) #nomeUsuarioNovo {
+    grid-area: input1;
+
+    width: 70%;
+    height: 30px;
+}
+.config form:nth-child(1) .lb2 {
+    grid-area: label2;
+}
+.config form:nth-child(1) #senhaUsuario {
+    grid-area: input2;
+
+    width: 70%;
+    height: 30px;
+}
+
+.config form:nth-child(1) .btn {
+    grid-area: btn;
+
+    cursor: pointer;
+    outline: none;
+    width: 30%; /*olhar*/
+    height: 35px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2227F0;
+    color: #fff;
+}
+
+/* form2 do config */
+.config form:nth-child(2) {
+    margin-left: 10px;
+    grid-area: form2;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "label input btn";
+}
+
+.config form:nth-child(2) label {
+    grid-area: label;
+}
+
+.config form:nth-child(2) input[type="email"] {
+    grid-area: input;
+
+    width: 70%;
+    height: 30px;
+}
+
+.config form:nth-child(2) button {
+    grid-area: btn;
+
+    cursor: pointer;
+    outline: none;
+    width: 40%;
+    height: 35px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2227F0;
+    color: #fff;
+}
+
+/* form3 do config */
+.config form:nth-child(3) {
+    margin-left: 10px;
+    grid-area: form3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "label1 label2 label3 ."
+                         "input1 input2 input3 btn";
+}
+
+.config form:nth-child(3) .label1 {
+    grid-area: label1;
+}
+.config form:nth-child(3) #senhaUsuarioAntiga {
+    grid-area: input1;
+
+    width: 70%;
+    height: 30px;
+}
+.config form:nth-child(3) .label2 {
+    grid-area: label2;
+}
+.config form:nth-child(3) #senhaUsuarioNovo {
+    grid-area: input2;
+
+    width: 70%;
+    height: 30px;
+}
+.config form:nth-child(3) .label3 {
+    grid-area: label3;
+}
+.config form:nth-child(3) #senhaUsuarioNovoConfirma {
+    grid-area: input3;
+
+    width: 70%;
+    height: 30px;
+}
+.config form:nth-child(3) input[type="submit"] {
+    grid-area: btn;
+
+    cursor: pointer;
+    outline: none;
+    width: 35%;
+    height: 35px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2227F0;
+    color: #fff;
+}
+
+/* form4 do config */
+.config .modoNoturno:nth-child(4) {
+    margin-left: 10px;
+    grid-area: form4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "label span";
+}
+
+.config .modoNoturno:nth-child(4) label{
+    grid-area: label;
+}
+
+/* form5 do config */
+.config form:nth-child(5) {
+    margin-left: 10px;
+    grid-area: form5;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "label input btn";
+}
+
+.config form:nth-child(5) label {
+    grid-area: label;
+}
+
+.config form:nth-child(5) input[type="text"] {
+    grid-area: input;
+
+    width: 70%;
+    height: 30px;
+}
+
+.config form:nth-child(5) input[type="submit"] {
+    grid-area: btn;
+
+    cursor: pointer;
+    outline: none;
+    width: 45%;
+    height: 35px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2227F0;
+    color: #fff;
+}
+
+/* Botão do modo noturno */
+input[type="checkbox"] {
+    display: none;
+}
+
+span {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    width: 50px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+span::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background-color: #c3c3c3;
+    transition: .4s;
+}
+
+input[type="checkbox"]:checked + span::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 30px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #000;
+}

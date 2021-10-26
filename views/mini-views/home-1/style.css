@@ -1,0 +1,139 @@
+body {
+    font-family: 'Tajawal';
+}
+
+.filtragem {
+    width: 100%;
+}
+
+.filtragem-1 form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filtragem-1 form label {
+    font-size: 1.4rem;
+}
+
+.filtragem-1 form input {
+    outline: none;
+    width: 70%;
+    height: 40px;
+    font-size: 1.3rem;
+    text-indent: 10px;
+    margin-left: 5px;
+}
+
+.filtragem-1 form button {
+    cursor: pointer;
+    outline: none;
+    width: 15%;
+    height: 40px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2227F0;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.filtragem-2 form:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.filtragem-2 form:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+    margin-top: 10px;
+}
+
+.filtragem-2 form select {
+    outline: none;
+    font-size: 1.4rem;
+    width: 12%;
+    margin-right: 9px;
+}
+
+.filtragem-2 form input[type="text"] {
+    outline: none;
+    width: 70%;
+    height: 40px;
+    font-size: 1.3rem;
+    text-indent: 10px;
+    margin-left: 5px;
+}
+
+.filtragem-2 form:nth-child(1) input[type="submit"] {
+    cursor: pointer;
+    outline: none;
+    width: 15%;
+    height: 40px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2227F0;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.filtragem-2 form:nth-child(2) input[type="submit"] {
+    cursor: pointer;
+    outline: none;
+    width: 23%;
+    height: 40px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2227F0;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.filtragem-3 form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.filtragem-3 form input {
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 40px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2227F0;
+    color: #fff;
+}
+
+.resultados {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.resultados li {
+    font-size: 1.3rem;
+}
+
+.resultados ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.livro {
+    margin: 5px;
+}

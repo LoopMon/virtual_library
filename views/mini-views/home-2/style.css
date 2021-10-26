@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Tajawal';
+}
+
+.conteudo {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 85vh 2vh 13vh;
+
+    grid-template-areas: "msgs"
+                         "."
+                         "btns";
+}
+
+.mensagens {
+    grid-area: msgs;
+
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.mensagem-usuario {
+    margin-left: 15px;
+}
+
+.mensagem-usuario h3 {
+    margin: 0;
+}
+
+.mensagem-usuario p {
+    margin-top: 0;
+} 
+
+.digitar-texto {
+    grid-area: btns;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 0.7fr 3fr 1fr;
+    grid-template-rows: 50px;
+
+    gap: 20px;
+
+    grid-template-areas: "label textarea input";
+
+    box-shadow: 0 -2px 0 1px #000;
+}
+
+.digitar-texto label {
+    margin: 5px;
+    grid-area: label;
+    font-size: 1.5rem;
+}
+
+.digitar-texto textarea {
+    margin: 5px;
+    grid-area: textarea;
+    outline: none;
+}
+
+.digitar-texto input[type="submit"] {
+    margin: 5px;
+    grid-area: input;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2227F0;
+    color: #fff;
+}
