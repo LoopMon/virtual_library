@@ -15,7 +15,7 @@
 - Usuarios online;
 - Trocar de email;
 - Função ordem alfabetica;
-- Função de apagar em cada pesquisa (caso não conseguir, estilizar os <ol>); ✔
+- Função de apagar em cada pesquisa (caso não conseguir, estilizar os ol); ✔
 - CSS geral da página de pesquisa; ✔
 - CSS do APP em geral; ✔
 - Ver consultas ou relatório que se pode fazer;
