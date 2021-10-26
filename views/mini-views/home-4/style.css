@@ -1,0 +1,53 @@
+.contato h3{
+    margin-left: 20px;
+}
+
+.contato h1 {
+    position: relative;
+}
+
+.contato h1 ion-icon{
+    position: absolute;
+    top: 2px;
+    margin-left: 5px;
+}
+
+.developers h1 {
+    position: relative;
+}
+
+.developers h1 ion-icon{
+    position: absolute;
+    top: 2px;
+    margin-left: 5px;
+}
+
+.developer {
+    margin-left: 20px;
+}
+
+.developer .perfil div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(100deg, #2227F0 0%, #8a2be2 100%);
+    margin-left: 10px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.perfil h3 {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}

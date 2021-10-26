@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#conteudo {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 20vh 80vh;
+
+    grid-template-areas: "header header"
+                         "nav    main";
+}
+
+header {
+    grid-area: header;
+}
+
+.desc-usuario {
+    display: block;
+    float: left;
+}
+
+.desc-usuario h1, .desc-usuario h3 {
+    margin: 20px;
+}
+
+.logo {
+    display: block;
+    float: right;
+    margin: 10px 40px 0 0;
+}
+
+main {
+    grid-area: main;
+
+    box-shadow: -1px -1px 0 2px #000;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.tela iframe {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    grid-area: nav;
+
+    box-shadow: 0 -1px 0 2px #000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    padding: 17px 0px 15px 15px;
+}
+
+nav a:hover {
+    border-bottom: solid #8a2be2 3px;
+}
+
+.linha {
+    border-bottom: solid #2227F0 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 20px;
+    transition: .1s;
+}

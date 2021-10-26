@@ -1,0 +1,64 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section div {
+    width: 400px;
+}
+
+section .olho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section .olho svg {
+    margin-top: 5px;
+}
+
+h1 {
+    color: #2227F0;
+    font-size: 3rem;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+input {
+    outline: none;
+    border: 0px;
+    border-bottom: 2px solid #8a2be2;
+    font-size: 16px;
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+    border: 0px;
+    background-color: #2227F0;
+    width: 80%;
+    height: 40px;
+    margin: 15px 10px 10px 10px;
+}
+
+.voltar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
