@@ -7,8 +7,6 @@
 - [ ] Relatório de acesso;
 - [ ] Número do acesso.
 
-##
-
 # Extras
 - [x] Função do olho no login e na criação de conta; 
 - [ ] Confirmar criação de conta por email;
