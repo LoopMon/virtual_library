@@ -18,3 +18,4 @@
 - [x] CSS do APP em geral; 
 - [ ] Ver consultas ou relatório que se pode fazer;
 - [ ] Esqueceu a senha (se der tempo);
+- [ ] Estrelinha para favoritos
